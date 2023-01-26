@@ -1,0 +1,24 @@
+.account-nav {
+  max-width: 216px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.account-nav__item {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.account-nav__link {
+  display: block;
+}
+
+.account-nav__link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2px;
+}

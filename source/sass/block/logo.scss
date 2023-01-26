@@ -1,0 +1,19 @@
+.logo {
+  width: 189px;
+  cursor: default;
+}
+
+.logo span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @include font(14px, 100%, 300);
+  letter-spacing: 0.27em;
+  color: #919191;
+  text-align: center;
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4px;
+}

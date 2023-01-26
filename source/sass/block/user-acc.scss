@@ -1,0 +1,16 @@
+.user-account {
+  display: flex;
+}
+
+.user-account__item {
+  &:not(:last-child) {
+    border-right: 1px solid $first-color;
+  }
+}
+
+.user-account__link {
+  display: block;
+  width: fit-content;
+
+  padding: 0 10px;
+}

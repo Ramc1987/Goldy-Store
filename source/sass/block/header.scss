@@ -1,0 +1,122 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  order: 3;
+}
+
+.header__phone-link {
+  display: flex;
+  align-items: center;
+}
+
+.header__phone-icon {
+  margin-right: 10px;
+}
+
+.header__user-account {
+  order: 4;
+}
+
+.header__account-nav {
+  order: 5;
+}
+
+//** select **//
+.choices {
+  @include font(14px, 100%, 400);
+
+  width: 100%;
+  max-width: 159px;
+  border: none;
+  margin-left: 8px;
+}
+
+.choices__inner {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.choices__list {
+  padding: 0;
+}
+
+.choices__list--single .choices__item {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.choices__list[aria-expanded] {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  width: 197px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  margin-top: 5px;
+  overflow-x: hidden;
+  word-break: break-all;
+  will-change: visibility;
+}
+
+.choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 0;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 0;
+}
+
+.choices__list[aria-expanded] .choices__list {
+  padding: 15px 0 8px 0;
+  padding-right: 0;
+}
+
+.choices__list[aria-expanded] .choices__item {
+  padding: 9px 0 9px 24px;
+  margin-bottom: 2px;
+}
+
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: transparent;
+
+  @include hover {
+    background-color: #fafafa;
+  }
+}
+
+.choices[data-type*="select-one"] {
+  &::after {
+    content: "";
+    height: 10px;
+    width: 15px;
+    background-image: url("../img/sprite/select-arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -2.5px;
+    pointer-events: none;
+  }
+}
+
+.choices[data-type*="select-one"].is-open::after {
+  border-color: transparent;
+  transform: rotate(180deg);
+}
+
+.choices__item .choices__item--selectable {
+  padding: 0;
+}
