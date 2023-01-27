@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {choiceJs} from './modules/project/choices';
+import {activateMobMenu} from './modules/project/mobile-menu';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     choiceJs();
+    activateMobMenu();
   });
 });
 

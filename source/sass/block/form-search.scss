@@ -1,0 +1,24 @@
+.form-search {
+  padding: 21px 0;
+}
+
+.form-search__search label {
+  display: flex;
+  align-items: center;
+}
+
+.form-search__search input {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 36px;
+
+  &::placeholder {
+    color: #a2a2a2;
+  }
+}
+
+.form-search__search-icon {
+  margin-left: 26px;
+}
