@@ -1,0 +1,24 @@
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 24px;
+
+  @include vp-767 {
+    bottom: 230px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #303030;
+  background-color: $second-color;
+}
+
+.swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #303030;
+  background-color: #303030;
+}

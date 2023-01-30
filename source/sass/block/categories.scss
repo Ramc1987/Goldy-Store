@@ -1,0 +1,113 @@
+.categories__container {
+  padding-top: 120px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+  }
+}
+
+.categories__container h2 {
+  @include font(40px, 100%, 400);
+  font-family: "Prata", "Arial", sans-serif;
+
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include vp-767 {
+    text-align: center;
+  }
+
+  @include vp-767 {
+    @include font(36px, 100%, 400);
+  }
+}
+
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  perspective: 600px;
+
+  @media (max-width: 1290px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+.categories__item {
+  display: flex;
+  height: 13vw;
+  min-height: 259px;
+  background-color: #f8f8f8;
+  transition: 0.4 ease-in-out;
+
+  @media (max-width: 1290px) {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  }
+
+  @include hover {
+    transform: scale(0.9);
+  }
+}
+
+.categories__link {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include focus {
+    outline: 1px solid $first-color;
+    outline-offset: 2px;
+  }
+}
+
+.categories__image {
+  margin: 0 auto;
+
+  &--rings {
+    margin-top: 51px;
+  }
+
+  &--earrings {
+    margin-top: 36px;
+  }
+
+  &--engagement-rings {
+    margin-top: 54px;
+  }
+
+  &--bracelets {
+    margin-top: 42px;
+  }
+
+  &--necklace {
+    margin-top: 37px;
+  }
+
+  &--clocks {
+    margin-top: 27px;
+  }
+}
+
+.categories__link h3 {
+  @include font(16px, 100%, 400);
+
+  text-align: center;
+  display: block;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 15px;
+
+  @include vp-767 {
+    @include font(22px, 100%, 400);
+  }
+}

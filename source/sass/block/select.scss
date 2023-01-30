@@ -4,3 +4,9 @@
   width: 197px;
   margin-right: 8px;
 }
+
+.wrapper--open-menu .select__marker-icon {
+  @include vp-767 {
+    display: none;
+  }
+}

@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ювелирный магазин">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Goldy-Store</title>
@@ -114,7 +114,192 @@
 
       </div>
     </header>
-    <main>
+    <main class="main">
+      <section class="promo-slider">
+        <div class="promo-slider__container container">
+          <h2 class="visually-hidden">Лучшие предлодложения и скидки нашего магазина</h2>
+          <div class="promo-slider__swiper-wrapper">
+            <div class="promo-slider__swiper-slides swiper" id="swiperPromo">
+              <ul class="swiper__list swiper-wrapper reset-list">
+                <li class="swiper__card promo-card swiper-slide" tabindex="0">
+                  <div class="promo-card__content">
+                    <span>Суперскидка до 60%</span>
+                    <p>НА БРИЛЛИАНТЫ</p>
+                    <a class="promo-card__button" href="#">Подробнее</a>
+                  </div>
+                  <div class="promo-card__image">
+                    <picture>
+                      <source type="image/webp" srcset="./img/content-images/promo-swiper-images/ring-diamants@1x.webp 1x, ./img/content-images/promo-swiper-images/ring-diamants@2x.webp 2x">
+                      <img src="./img/content-images/promo-swiper-images/ring-diamants@1x.png" srcset="./img/content-images/promo-swiper-images/ring-diamants@2x.png" width="548" height="548" alt="">
+                    </picture>
+                  </div>
+                </li>
+                <li class="swiper__card promo-card swiper-slide" tabindex="0">
+                  <div class="promo-card__content">
+                    <span>Суперскидка до 60%</span>
+                    <p>НА БРИЛЛИАНТЫ</p>
+                    <a class="promo-card__button" href="#">Подробнее</a>
+                  </div>
+                  <div class="promo-card__image">
+                    <picture>
+                      <source type="image/webp" srcset="./img/content-images/promo-swiper-images/ring-diamants@1x.webp 1x, ./img/content-images/promo-swiper-images/ring-diamants@2x.webp 2x">
+                      <img src="./img/content-images/promo-swiper-images/ring-diamants@1x.png" srcset="./img/content-images/promo-swiper-images/ring-diamants@2x.png" width="548" height="548" alt="">
+                    </picture>
+                  </div>
+                </li>
+                <li class="swiper__card promo-card swiper-slide" tabindex="0">
+                  <div class="promo-card__content">
+                    <span>Суперскидка до 60%</span>
+                    <p>НА БРИЛЛИАНТЫ</p>
+                    <a class="promo-card__button" href="#">Подробнее</a>
+                  </div>
+                  <div class="promo-card__image">
+                    <picture>
+                      <source type="image/webp" srcset="./img/content-images/promo-swiper-images/ring-diamants@1x.webp 1x, ./img/content-images/promo-swiper-images/ring-diamants@2x.webp 2x">
+                      <img src="./img/content-images/promo-swiper-images/ring-diamants@1x.png" srcset="./img/content-images/promo-swiper-images/ring-diamants@2x.png" width="548" height="548" alt="">
+                    </picture>
+                  </div>
+                </li>
+              </ul>
+              <button class="promo-slider__swiper-button promo-slider__swiper-button--prev swiper-button-prev" type="button">
+                <svg role="img" aria-label="кнопка назад." width="16" height="32">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button class="promo-slider__swiper-button promo-slider__swiper-button--next swiper-button-next" type="button">
+                <svg role="img" aria-label="кнопка вперед." width="16" height="32">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="categories__container container">
+          <h2>Популярные категории</h2>
+          <ul class="categories__list reset-list">
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <div class="categories__image categories__image--rings">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/popular-images/rings@1x.webp 1x, ./img/content-images/popular-images/rings@2x.webp 2x">
+                    <img src="./img/content-images/popular-images/rings@1x.png" srcset="./img/content-images/popular-images/rings@2x.png" width="127" height="100" alt="">
+                  </picture>
+                </div>
+                <h3>Часы</h3>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <div class="categories__image categories__image--earrings">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/popular-images/earrings@2x.webp 1x, ./img/content-images/popular-images/earrings@2x.webp 2x">
+                    <img src="./img/content-images/popular-images/earrings@1x.png" srcset="./img/content-images/popular-images/earrings@2x.png" width="102" height="130" alt="">
+                  </picture>
+                </div>
+                <h3>Серьги</h3>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <div class="categories__image categories__image--engagement-rings">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/popular-images/engagement-rings@1x.webp 1x, ./img/content-images/popular-images/engagement-rings@2x.webp 2x">
+                    <img src="./img/content-images/popular-images/engagement-rings@1x.png" srcset="./img/content-images/popular-images/engagement-rings@2x.png" width="117" height="93" alt="">
+                  </picture>
+                </div>
+                <h3>Помолвочные кольца</h3>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <div class="categories__image categories__image--bracelets">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/popular-images/bracelets@1x.webp 1x, ./img/content-images/popular-images/bracelets@2x.webp 2x">
+                    <img src="./img/content-images/popular-images/bracelets@1x.png" srcset="./img/content-images/popular-images/bracelets@2x.png" width="141" height="118" alt="">
+                  </picture>
+                </div>
+                <h3>Браслеты</h3>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <div class="categories__image categories__image--necklace">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/popular-images/necklace@1x.webp 1x, ./img/content-images/popular-images/necklace@2x.webp 2x">
+                    <img src="./img/content-images/popular-images/necklace@1x.png" srcset="./img/content-images/popular-images/necklace@1x.png" width="118" height="118" alt="">
+                  </picture>
+                </div>
+                <h3>Колье и подвески</h3>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                <div class="categories__image categories__image--clocks">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/popular-images/clocks@1x.webp 1x, ./img/content-images/popular-images/clocks@2x.webp 2x">
+                    <img src="./img/content-images/popular-images/clocks@1x.png" srcset="./img/content-images/popular-images/clocks@2x.png" width="122" height="147" alt="">
+                  </picture>
+                </div>
+                <h3>Часы</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <section class="sale">
+        <h2 class="visually-hidden">Скидки нашего магазина</h2>
+        <div class="sale__container container">
+          <ul class="sale__list reset-list">
+            <li class="sale__item">
+              <a class="sale__link" href="#">
+                <div class="sale__link-content">
+                  <h3>Скидки<br> на&nbsp;все украшения с&nbsp;бриллиантами</h3>
+                  <div class="sale__sale-counter sale__sale-counter--green">
+                    <span>До</span>
+                    <span>-50%</span>
+                  </div>
+                </div>
+                <div class="sale__image">
+                  <img class="sale__img sale__img--decoration" src="./img/content-images/discounts-images/decoration@1x.png" width="124" height="312" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="sale__item">
+              <a class="sale__link" href="#">
+                <div class="sale__link-content">
+                  <h3>Скидки<br> на&nbsp;кольца и&nbsp;браслеты</h3>
+                  <div class="sale__sale-counter sale__sale-counter--red">
+                    <span>До</span>
+                    <span>-40%</span>
+                  </div>
+                </div>
+                <div class="sale__image">
+                  <img class="sale__img sale__img--rings-braslets" src="./img/content-images/discounts-images/rings-braslets@1x.png" width="419" height="341" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="sale__item">
+              <a class="sale__link" href="#">
+                <div class="sale__link-content">
+                  <h3>снижение цен на&nbsp;обручальные кольца</h3>
+                  <div class="sale__sale-counter sale__sale-counter--yellow">
+                    <span>До</span>
+                    <span>-60%</span>
+                  </div>
+                </div>
+                <div class="sale__image sale__image--discounts-earrings">
+                  <img class="sale__img sale__img--discounts-earrings" src="./img/content-images/discounts-images/discounts-earrings@1x.png" width="397" height="266" alt="">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
     </main>
     <footer>
       <div class="container"></div>

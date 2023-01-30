@@ -1,0 +1,202 @@
+.sale__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.sale__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @media (max-width: 1285px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sale__item {
+  min-height: 290px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+    background-image: url("../../img/background/decor-background.jpg");
+    background-repeat: no-repeat;
+    width: 455px;
+    height: 352px;
+  }
+
+  @include vp-767 {
+    min-height: 350px;
+  }
+}
+
+.sale__link {
+  display: flex;
+
+  @media (max-width: 1285px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    flex-direction: column-reverse;
+    align-items: center;
+    min-height: 350px;
+  }
+}
+
+.sale__link-content {
+  width: 248px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 48px;
+
+  @media (max-width: 1284px) {
+    width: 48%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.sale__link-content h3 {
+  @include font(20px, 160%, 600);
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 19px;
+  margin-left: 27px;
+  z-index: 1;
+
+  @include vp-767 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.sale__sale-counter {
+  display: flex;
+  align-items: center;
+  width: 194px;
+  z-index: 1;
+
+  @include vp-767 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  &--green {
+    background-color: #43807f;
+  }
+
+  &--red {
+    background-color: #e24b33;
+  }
+
+  &--yellow {
+    background-color: #e1a661;
+  }
+}
+
+.sale__link-content span {
+  @include font(24px, 160%, 600);
+  color: $second-color;
+
+  margin-left: 27px;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
+
+.sale__link-content span + span {
+  @include font(36px, 160%, 600);
+
+  margin-left: 13px;
+}
+
+.sale__image {
+  z-index: 1;
+
+  @include vp-767 {
+    margin-bottom: 15px;
+
+    &--discounts-earrings {
+      margin-left: auto;
+    }
+  }
+}
+
+.sale__img {
+  object-fit: cover;
+
+  &--decoration {
+    height: auto;
+    object-fit: cover;
+
+    @include vp-767 {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  &--rings-braslets {
+    object-position: -127px 82px;
+    height: 100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &--discounts-earrings {
+    height: 100%;
+    object-position: -27px 27px;
+  }
+
+  @media (max-width: 1284px) {
+    height: 28vw;
+    object-position: 0 0;
+
+    &--discounts-earrings {
+      width: 100%;
+    }
+  }
+
+  @include vp-1023 {
+    width: 300px;
+    height: auto;
+
+    &--decoration {
+      width: 124px;
+    }
+  }
+
+  @include vp-767 {
+    &--decoration {
+      width: 100%;
+      height: 300px;
+    }
+
+    &--discounts-earrings {
+      margin-left: auto;
+    }
+  }
+}
