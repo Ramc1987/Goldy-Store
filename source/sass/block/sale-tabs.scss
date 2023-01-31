@@ -17,7 +17,8 @@
 
 .sale-tabs__tabs-button-list {
   display: flex;
-  margin-bottom: 36px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
 }
 
 .sale-tabs__button {
@@ -25,17 +26,29 @@
   display: block;
   width: fit-content;
   padding: 13px 30px;
+  margin-bottom: 10px;
   background-color: #f0f0f0;
   border-radius: 21px;
 
   &:not(:last-child) {
     margin-right: 8px;
+
+    @include vp-767 {
+      margin-right: 0;
+    }
   }
 
   &--active {
     position: relative;
     background-color: #303030;
     color: $second-color;
+  }
+
+  @include vp-767 {
+    width: 100%;
+
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -44,33 +57,38 @@
 
   &--active {
     display: grid;
-    grid-template-columns: repeat(3, 310px);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: space-between;
     gap: 20px;
+  }
+
+  @media (max-width: 1375px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
 .sale-tabs__content-item {
   display: flex;
-  width: 310px;
+  min-width: 310px;
   min-height: 370px;
   border: 1px solid #f0f0f0;
+
+  @include vp-767 {
+    min-width: 100%;
+  }
 }
 
 .sale-tabs__content-wrapper {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 
 .sale-tabs__content-image {
-  &--slide-2 {
-    transform: rotateY(150deg);
-  }
-
-  &--slide-3 {
-    transform: rotateY(170deg);
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .sale-tabs .swiper-horizontal > .swiper-pagination-bullets,
