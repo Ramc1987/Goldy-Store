@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {choiceJs} from './modules/project/choices';
 import {activateMobMenu} from './modules/project/mobile-menu';
 import {initSwiperPromo} from './modules/project/swiper-promo';
+import {initSwiperSaleProducts} from './modules/project/sale-product';
+import {activatesTabs} from './modules/project/tabs';
 
 // ---------------------------------
 
@@ -14,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initSwiperPromo(swiper);
+  initSwiperSaleProducts(swiper);
 
   // Modules
   // ---------------------------------
@@ -24,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     choiceJs();
     activateMobMenu();
+    activatesTabs();
   });
 });
 
