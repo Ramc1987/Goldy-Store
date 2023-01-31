@@ -1,7 +1,7 @@
 const initSwiperSaleProducts = (swiper) => {
   if (swiper) {
     // eslint-disable-next-line
-    new Swiper('#swiperSaleProduct', {
+    new Swiper('#swiperSaleProducts', {
       loop: true,
       cssMode: true,
       autoplay: {

@@ -107,6 +107,7 @@
 }
 
 .sale__tabs-image-item {
+  position: relative;
   width: 200px;
   height: 200px;
 }
@@ -127,6 +128,7 @@
   height: 8px;
   border: 1px solid #303030;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .hover-slider-indicator-dot.active {
@@ -146,6 +148,7 @@
 }
 
 .sale-tabs__button-icons {
+  cursor: pointer;
   width: 24px;
   height: 24px;
   position: relative;
