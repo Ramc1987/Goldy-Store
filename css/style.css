@@ -2375,9 +2375,9 @@ button,
 .promo-slider__swiper-button--prev {
   left: 24px;
   top: 45.5%;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   background-image: url("../../img/sprite/arrow-next.svg");
   background-repeat: no-repeat;
   background-position: 17px 21px;
