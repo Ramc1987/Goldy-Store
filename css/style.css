@@ -1672,7 +1672,7 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Light.woff") format("woff");
+  src: url("../../fonts/Roboto Condensed-Light.woff2") format("woff2"), url("../../fonts/Roboto Condensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -2375,9 +2375,9 @@ button,
 .promo-slider__swiper-button--prev {
   left: 24px;
   top: 45.5%;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
   background-image: url("../../img/sprite/arrow-next.svg");
   background-repeat: no-repeat;
   background-position: 17px 21px;
